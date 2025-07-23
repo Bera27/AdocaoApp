@@ -1,5 +1,8 @@
 ﻿using AdocaoApp;
+using AdocaoApp.Screens.AnimalScreens;
+using AdocaoApp.Screens.BreedScreens;
 using AdocaoApp.Screens.CategoryScreens;
+using AdocaoApp.Screens.DonorScreens;
 using Microsoft.Data.SqlClient;
 
 namespace AdocaoApp
@@ -26,16 +29,33 @@ namespace AdocaoApp
             Console.WriteLine("1 - Verificar animais disponives");
             Console.WriteLine("2 - Cadastrar novo animal");
             Console.WriteLine("3 - Listar por categoria");
-            Console.WriteLine("4 - Busca por raça");
+            Console.WriteLine("4 - Busca animais por raça");
             Console.WriteLine("5 - Criar nova categoria");
+            Console.WriteLine("6 - Criar nova Raça");
+            Console.WriteLine("7 - Cadastrar dados de novo doador");
             short opition = short.Parse(Console.ReadLine());
 
             switch (opition)
             {
+                case 2:
+                    CreateAnimalScreen.Load();
+                    break;
+                    
                 case 5:
                     CreateCategoryScreen.Load();
                     break;
 
+                case 6:
+                    CreateBreedScreen.Load();
+                    break;
+
+                case 7:
+                    CreateDonorScreen.Load();
+                    break;
+
+                case 8:
+                    GetCategoryBreedScreen.Load();
+                    break;
                     
                 default: Load(); break; 
             }

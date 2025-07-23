@@ -6,11 +6,11 @@ using Dapper.Contrib.Extensions;
 
 namespace AdocaoApp.Models
 {
-    [Table("[Breed]")]
-    public class Breed
+    [Table("[Donor]")]
+    public class Donor
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int CategoryId { get; set; }
+        public string Phone { get; set; }
     }
 }

@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AdocaoApp.Models;
+using AdocaoApp.Screens.BreedScreens;
+using Dapper;
 using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
 
@@ -17,8 +20,8 @@ namespace AdocaoApp.Repositories
         public IEnumerable<T> GetAll()
             => _connection.GetAll<T>();
 
-        public T Get(int id)
-            => _connection.Get<T>(id);
+        public T Get(T model)
+            => _connection.Get<T>(model);
 
         public void Create(T model)
             => _connection.Insert<T>(model);

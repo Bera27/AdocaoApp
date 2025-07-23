@@ -64,3 +64,4 @@ C:\projetos\AdocaoApp\obj\Debug\net9.0\refint\AdocaoApp.dll
 C:\projetos\AdocaoApp\obj\Debug\net9.0\AdocaoApp.pdb
 C:\projetos\AdocaoApp\obj\Debug\net9.0\AdocaoApp.genruntimeconfig.cache
 C:\projetos\AdocaoApp\obj\Debug\net9.0\ref\AdocaoApp.dll
+C:\projetos\AdocaoApp\obj\Debug\net9.0\AdocaoApp.sourcelink.json
