@@ -28,11 +28,10 @@ namespace AdocaoApp
             Console.WriteLine("");
             Console.WriteLine("1 - Verificar animais disponives");
             Console.WriteLine("2 - Cadastrar novo animal");
-            Console.WriteLine("3 - Listar por categoria");
+            Console.WriteLine("3 - Gestão de categorias");
             Console.WriteLine("4 - Busca animais por raça");
-            Console.WriteLine("5 - Criar nova categoria");
             Console.WriteLine("6 - Criar nova Raça");
-            Console.WriteLine("7 - Cadastrar dados de novo doador");
+            Console.WriteLine("7 - Gestão de Doador");
             short opition = short.Parse(Console.ReadLine());
 
             switch (opition)
@@ -41,8 +40,8 @@ namespace AdocaoApp
                     CreateAnimalScreen.Load();
                     break;
                     
-                case 5:
-                    CreateCategoryScreen.Load();
+                case 3:
+                    MenuCategoryScreen.Load();
                     break;
 
                 case 6:
@@ -50,7 +49,7 @@ namespace AdocaoApp
                     break;
 
                 case 7:
-                    CreateDonorScreen.Load();
+                    MenuDonorScreen.Load();
                     break;
 
                 case 8:

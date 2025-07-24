@@ -23,6 +23,9 @@ namespace AdocaoApp.Repositories
         public T Get(T model)
             => _connection.Get<T>(model);
 
+        public T Get(int id)
+            => _connection.Get<T>(id);
+
         public void Create(T model)
             => _connection.Insert<T>(model);
 
@@ -33,6 +36,11 @@ namespace AdocaoApp.Repositories
         {
             var model = _connection.Get<T>(id);
             _connection.Delete<T>(model);
+        }
+
+        internal void Update(object donor)
+        {
+            throw new NotImplementedException();
         }
     }
 }

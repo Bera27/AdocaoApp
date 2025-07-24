@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdocaoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7ab3b29670faa4a09210615d2807079b9aba1f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2af5550e650b6814cf5780636310e29669fcebd")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdocaoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdocaoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
