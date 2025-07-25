@@ -14,5 +14,21 @@ namespace AdocaoApp.Models
         public int DonorId { get; set; }
         public int AgeMonths { get; set; }
         public DateTime AdmissionDate { get; set; }
+
+
+        [Write(false)]
+        public string BreedName { get; set; }
+
+        [Write(false)]
+        public int BreedCategoryId { get; set; }
+
+        [Write(false)]
+        public string DonorName { get; set; }
+
+        [Write(false)]
+        public string CategoryName { get; set; }
+
+        [Write(false)]
+        public string DonorPhone { get; set; }
     }
 }
