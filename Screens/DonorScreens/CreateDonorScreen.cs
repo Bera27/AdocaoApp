@@ -27,7 +27,7 @@ namespace AdocaoApp.Screens.DonorScreens
                 Phone = phone
             });
             Console.ReadKey();
-            Program.Load();
+            MenuDonorScreen.Load();
         }
 
         public static void CreateDonor(Donor donor)

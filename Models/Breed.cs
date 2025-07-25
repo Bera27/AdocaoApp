@@ -12,5 +12,9 @@ namespace AdocaoApp.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int CategoryId { get; set; }
+
+
+        [Write(false)]
+        public Category Category { get; set; }
     }
 }

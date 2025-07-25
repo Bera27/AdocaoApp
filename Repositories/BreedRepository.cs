@@ -15,19 +15,25 @@ namespace AdocaoApp.Repositories
         public BreedRepository(SqlConnection connection)
             => _connection = connection;
 
-        public IEnumerable<Breed> GetByCategoryName(string categoryName)
+        public IEnumerable<Breed> GetCategoryName()
         {
             const string sql = @"
             SELECT 
                 b.Id,
                 b.Name,
-                b.CategoryId
+                b.CategoryId,
+                c.Id,
+                c.Name
             FROM Breed b
             INNER JOIN Category c 
-                ON b.CategoryId = c.Id
-            WHERE c.Name = @Name;";
+                ON b.CategoryId = c.Id";
 
-            return _connection.Query<Breed>(sql, new { Name = categoryName });
+            return _connection.Query<Breed, Category, Breed>(sql,
+            (breed, category) =>
+            {
+                breed.Category = category;
+                return breed;
+            }, splitOn: "Id");
         }
     }
 }

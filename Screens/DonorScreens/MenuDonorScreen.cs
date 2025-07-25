@@ -10,12 +10,12 @@ namespace AdocaoApp.Screens.DonorScreens
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Gestão de categoria:");
+            Console.WriteLine("Gestão de doadores:");
             Console.WriteLine("");
-            Console.WriteLine("1 - Criar categoria");
-            Console.WriteLine("2 - Listar categorias disponiveis");
-            Console.WriteLine("3 - Atualizar categoria");
-            Console.WriteLine("4 - Excluir categoria");
+            Console.WriteLine("1 - Cadastrar novo doador de animal");
+            Console.WriteLine("2 - Listar Doadores disponiveis");
+            Console.WriteLine("3 - Atualizar dados de um doador");
+            Console.WriteLine("4 - Excluir dados de um doador");
             Console.WriteLine("5 - Voltar");
             Console.WriteLine();
             int option = int.Parse(Console.ReadLine());
